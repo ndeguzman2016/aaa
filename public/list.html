@@ -1,7 +1,7 @@
 <body ng-app="module">
 <script src="js/app.js"></script>
      <h2>
-      Contacts
+      Contactsddd
     </h2>
      <div class="col-md-2">
       <a style="margin-top:20px" class="btn btn-default" href="#/new/contact"><button>New</button></a>
@@ -21,9 +21,9 @@
 <div class="container">
   <table class="table table-hover">
     <tbody>
-      <tr ng-repeat="contact in contacts | orderBy:'lastName'| filter:searchText" style="cursor:pointer">
+      <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
         <td>
-          <a ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }}</a>
+          <a ng-href="#/contact/{{contact._id}}">ssss {{ contact.firstName }} {{ contact.lastName }}</a>
         </td>
       </tr>
     </tbody>
