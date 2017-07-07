@@ -7,7 +7,7 @@
       <a style="margin-top:20px" class="btn btn-default" href="#/new/contact"><button>New</button></a>
   </div>
 
-    search: <input type="text" placeholder="Search Contacs" ng-model="searchText"><br><br>
+    search: <input type="text" placeholder="Search Contacs" ng-model="searchText.firstName"><br><br>
 <div class = "row">
   <div class="col-md-6">
   </div>
@@ -20,6 +20,9 @@
 </div>
 <div class="container">
   <table class="table table-hover">
+    <thead>
+    <tr><th>name</th></tr>  
+    </thead>
     <tbody>
       <tr ng-repeat="contact in contacts | orderBy:'lastName'| filter:searchText" style="cursor:pointer">
         <td>
